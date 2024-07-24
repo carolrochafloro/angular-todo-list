@@ -1,1 +1,24 @@
-<p>list works!</p>
+<div class="container">
+  <img
+    src="img/task-list-empty.png"
+    alt="Empty list. Create a new task!"
+    loading="eager"
+  />
+
+  @if(addItem()) {<button class="btn btn-primary" (click)="addItem.set(false)">
+    Create a new task</button
+  >} @else {
+  <div>
+    <label class="input-label-text" for="inputValue">
+      <input
+        type="text"
+        placeholder="Add a new item"
+        autofocus
+        id="inputValue"
+      />
+
+      <button class="btn btn-primary-circle" title="Add new item"></button>
+    </label>
+  </div>
+  }
+</div>
