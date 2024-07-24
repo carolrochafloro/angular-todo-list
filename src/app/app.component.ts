@@ -5,9 +5,7 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  template: `<p>teste</p>
+    <router-outlet />`,
 })
-export class AppComponent {
-  title = 'angular-todo-list';
-}
+export class AppComponent {}
